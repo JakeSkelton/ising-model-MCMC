@@ -12,8 +12,8 @@ To compile 'markov_chain_monte_carlo.pyx' into a .c and a .pyd (or .so on Linux)
 >python setup_mcmc.py build_ext --inplace
 
 on the command line in the directory containing both 
-'markov_chain_monte_carlo.pyx' and 'setup_mcmc.py', as described in the Cython documentation
+*markov_chain_monte_carlo.pyx* and *setup_mcmc.py*, as described in the Cython documentation
 https://cython.readthedocs.io/en/latest/src/userguide/source_files_and_compilation.html.
 Once the .pyd is created, it is imported by Python programs just like a module of pure Python.
 
-If all else fails and the .pyx cannot be compiled, I suppose one could remove all Cython-specific syntax in 'markov_chain_monte_carlo.pyx' and save it as a .py, but it will run about 100x slower.
+If all else fails and the .pyx cannot be compiled, I suppose one could remove all Cython-specific syntax in *markov_chain_monte_carlo.pyx* and save it as a .py, but it will run about 100x slower.
